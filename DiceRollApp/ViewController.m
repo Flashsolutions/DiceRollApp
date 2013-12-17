@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "DiceDataController.h"
+
 
 @interface ViewController ()
 
@@ -26,4 +28,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)rollClicked:(id)sender {
+    DiceDataController *diceController = [[DiceDataController alloc] init];
+    int firstNumber = [diceController getDieNumber];
+    int secondNumber = [diceController getDieNumber];
+    
+    [self.firstDieView showDieNumber:firstNumber];
+    [self.secondDieView showDieNumber:secondNumber];
+    
+    self.sumLabel.text = [NSString stringWithFormat:@"The sum is %d", firstNumber + secondNumber];
+   
+}
 @end

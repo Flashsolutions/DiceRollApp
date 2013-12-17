@@ -21,6 +21,8 @@
 		46B70D6F1857D9F300F5407E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B70D511857D9F300F5407E /* UIKit.framework */; };
 		46B70D771857D9F300F5407E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46B70D751857D9F300F5407E /* InfoPlist.strings */; };
 		46B70D791857D9F300F5407E /* DiceRollAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B70D781857D9F300F5407E /* DiceRollAppTests.m */; };
+		46B70D841857DDB800F5407E /* DieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B70D831857DDB800F5407E /* DieView.m */; };
+		46B70D871857E06A00F5407E /* DiceDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B70D861857E06A00F5407E /* DiceDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		46B70D741857D9F300F5407E /* DiceRollAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiceRollAppTests-Info.plist"; sourceTree = "<group>"; };
 		46B70D761857D9F300F5407E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		46B70D781857D9F300F5407E /* DiceRollAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceRollAppTests.m; sourceTree = "<group>"; };
+		46B70D821857DDB800F5407E /* DieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieView.h; sourceTree = "<group>"; };
+		46B70D831857DDB800F5407E /* DieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DieView.m; sourceTree = "<group>"; };
+		46B70D851857E06A00F5407E /* DiceDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiceDataController.h; sourceTree = "<group>"; };
+		46B70D861857E06A00F5407E /* DiceDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiceDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,10 @@
 				46B70D631857D9F300F5407E /* ViewController.m */,
 				46B70D651857D9F300F5407E /* Images.xcassets */,
 				46B70D541857D9F300F5407E /* Supporting Files */,
+				46B70D821857DDB800F5407E /* DieView.h */,
+				46B70D831857DDB800F5407E /* DieView.m */,
+				46B70D851857E06A00F5407E /* DiceDataController.h */,
+				46B70D861857E06A00F5407E /* DiceDataController.m */,
 			);
 			path = DiceRollApp;
 			sourceTree = "<group>";
@@ -250,7 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B70D641857D9F300F5407E /* ViewController.m in Sources */,
+				46B70D841857DDB800F5407E /* DieView.m in Sources */,
 				46B70D5E1857D9F300F5407E /* AppDelegate.m in Sources */,
+				46B70D871857E06A00F5407E /* DiceDataController.m in Sources */,
 				46B70D5A1857D9F300F5407E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +393,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiceRollApp/DiceRollApp-Prefix.pch";
 				INFOPLIST_FILE = "DiceRollApp/DiceRollApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +407,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiceRollApp/DiceRollApp-Prefix.pch";
 				INFOPLIST_FILE = "DiceRollApp/DiceRollApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +474,7 @@
 				46B70D7E1857D9F300F5407E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46B70D7F1857D9F300F5407E /* Build configuration list for PBXNativeTarget "DiceRollAppTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +483,7 @@
 				46B70D811857D9F300F5407E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
